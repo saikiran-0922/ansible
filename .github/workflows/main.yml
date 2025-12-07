@@ -1,0 +1,14 @@
+
+name: Hello World Workflow
+
+on:
+  workflow_dispatch:   # Run manually from GitHub UI
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello World
+        run: echo "Hello, World! GitHub Actions is working!"
+
